@@ -1,8 +1,5 @@
 @import "tailwindcss";
 
-/* Keystatic's config isn't markup; keep words like "table" from becoming CSS. */
-@source not "../../keystatic.config.ts";
-
 /* Tailwind's reset zeroes paragraph margins; bring back the browser default
    so multi-paragraph bios get space between paragraphs. Utilities such as
    mt-2 still override this. */
@@ -12,7 +9,7 @@
 	}
 }
 
-/* Rich text from Keystatic bios (the profile page wraps it in .bio).
+/* Rich text from the Markdoc bios (the profile page wraps it in .bio).
    Tailwind's reset strips heading sizes, list bullets and link colors. */
 @layer components {
 	.bio > :first-child {
