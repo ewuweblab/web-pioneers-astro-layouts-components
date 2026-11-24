@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
-import Footer from '../components/Footer.astro';
+// import Footer Component
+
 import { SITE_TITLE } from '../consts';
 
 const { title } = Astro.props;
@@ -24,6 +25,11 @@ const pageTitle = title === SITE_TITLE ? title : `${title} | ${SITE_TITLE}`;
 			<slot />
 		</main>
 
-		<Footer />
+		<footer class="text-center">
+
+			<p>&copy; YEAR Name of Website</p>
+
+		</footer>
+
 	</body>
 </html>
